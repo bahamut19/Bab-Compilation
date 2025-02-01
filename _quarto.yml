@@ -1,0 +1,50 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "A Compilation of the Bab's Writings"
+  subtitle: "Translated Using GPT-4"
+  author: "The Bab"
+  reader-mode: true
+  downloads: [pdf, docx]
+  search: true
+  
+  page-footer: 
+    left: |
+      Created by the Baha'i Translation Project
+    right: |
+      Translations used were created with GPT 4
+  
+  chapters:
+    - index.qmd
+##    - part: "Writings Revealed in the Year 1844"
+ ##     chapters:
+ ##       - ahsan-al-qasas.qmd
+    - part: "Writings Revealed in the Year 1848"
+      chapters:
+        - persian-bayan.qmd
+
+  output-file: "Bab Compilation GPT"
+
+
+format:
+  html:
+    theme:
+      - minty
+    fontsize: 10pt
+    number-depth: 6
+    toc-depth: 6
+  
+  pdf:
+    documentclass: scrbook
+    output-file: "Bab Compilation GPT4"
+    fontsize: 9pt
+    number-depth: 6
+    toc-depth: 6
+    
+  docx:
+    reference-doc: reference1.docx
+    toc-depth: 1
+    number-depth: 6
+

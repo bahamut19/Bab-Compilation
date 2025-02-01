@@ -1,0 +1,17 @@
+{{< pagebreak >}}
+
+# Welcome! {#sec-welcome .unnumbered}
+
+This book is a provisional translation of the Bab's Writings. All items are taken from the original Arabic and Persian from various sources and translated using the latest version of OpenAI's GPT.
+
+There are thousands of works which have not been translated by people yet. Some of which had been translated, by authorized sources of the Baha'i Faith, others by academics and those interested in the revelation of the Bab.
+
+We acknowledge GPT is imperfect, but we can acknowledge it is unbiased in that it was trained from many data points, some of which may favor a perspective, but the totality of all data points should bring the translation as close to a neutral voice as possible. We hope you find this book useful. You are welcome to share it as you see fit.
+
+The Writings of the Bab are organized by date where possible, or by the location He was in when the Writing was revealed. Books highlighted in bold are those which were revealed unsolicited, and books in a normal font were revealed as responses to questions solicited directly to the Bab. The Bayan was revealed for everyone unsolicited. The unsolicited writings will be more general and broad in scope, and revealed to be in a context for everyone (or particular audiences when specified). The solicited ones may regularly seem to repeat themes elsewhere, but be placed in a particular context relevant to whom originally asked the Bab a question. Each are equally important.
+
+If you would like to help with translations, or to help refine the translations made, visit the [Baha'i Collaborative Translation Wiki.](https://www.hgworld.org/ctw/index.php?title=Main_Page)
+
+Discussion can be had on Reddit at the [Bab and Baha'u'llah](https://www.reddit.com/r/BabandBahaullah/) community.
+
+{{< pagebreak >}}
