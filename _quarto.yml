@@ -24,6 +24,10 @@ book:
     - part: "Writings Revealed in the Year 1848"
       chapters:
         - persian-bayan.qmd
+        - arabic-bayan.qmd
+##    - part: "INBA Collections"
+##      chapters:
+##        - INBA86.qmd
 
   output-file: "Bab Compilation GPT"
 
