@@ -25,6 +25,10 @@ book:
       chapters:
         - persian-bayan.qmd
         - arabic-bayan.qmd
+    - part: "Writings Without Known Dates"
+      chapters: 
+        - tawqi’i-i-dhahabiyyih.qmd
+        - Tafsir-i-Suratul-Baqara introduction.qmd
 ##    - part: "INBA Collections"
 ##      chapters:
 ##        - INBA86.qmd
