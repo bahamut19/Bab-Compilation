@@ -25,6 +25,9 @@ book:
       chapters:
         - persian-bayan.qmd
         - arabic-bayan.qmd
+    - part: "Writings Revealed in the Year 1850"
+      chapters: 
+        - testament of the primal point.qmd
     - part: "Writings Without Known Dates"
       chapters: 
         - tawqi’i-i-dhahabiyyih.qmd
