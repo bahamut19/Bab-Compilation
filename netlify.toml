@@ -1,0 +1,4 @@
+# The site is rendered on your computer (tools/render_all.py) and the _book folder is committed.
+# Netlify only publishes it: leave the build command EMPTY in the Netlify dashboard.
+[build]
+  publish = "_book"

@@ -1,61 +1,43 @@
+# YOUR settings file. The build script creates it once and never overwrites it.
+# Chapter lists are generated into _quarto-web.yml and _quarto-docx-*.yml (profiles).
 project:
   type: book
-  output-dir: _book
+
+profile:
+  default: web
 
 book:
   title: "A Compilation of the Bab's Writings"
-  subtitle: "Translated Using GPT-4"
+  subtitle: "Translated Using GPT-5"
   author: "The Bab"
+  language: en
+  site-url: https://bab.peopleofbaha.world
   reader-mode: true
-  downloads: [pdf, docx]
   search: true
-  
-  page-footer: 
+  page-footer:
     left: |
       Created by the Baha'i Translation Project
     right: |
-      Translations used were created with GPT 4
-  
-  chapters:
-    - index.qmd
-    - part: "Writings Revealed in the Year 1844"
-      chapters:
-        - ahsan-al-qasas.qmd
-    - part: "Writings Revealed in the Year 1848"
-      chapters:
-        - persian-bayan.qmd
-        - arabic-bayan.qmd
-    - part: "Writings Revealed in the Year 1850"
-      chapters: 
-        - testament of the primal point.qmd
-    - part: "Writings Without Known Dates"
-      chapters: 
-        - tawqi’i-i-dhahabiyyih.qmd
-        - Tafsir-i-Suratul-Baqara introduction.qmd
-##    - part: "INBA Collections"
-##      chapters:
-##        - INBA86.qmd
+      Translations used were created with GPT 5
 
-  output-file: "Bab Compilation GPT"
+execute:
+  eval: false
 
-
+# Render each format explicitly (render_all.py does this): --to html / --to docx
 format:
   html:
     theme:
       - minty
+      - assets/custom.scss
     fontsize: 10pt
-    number-depth: 6
+    toc: true
     toc-depth: 6
-  
-  pdf:
-    documentclass: scrbook
-    output-file: "Bab Compilation GPT4"
-    fontsize: 9pt
-    number-depth: 6
-    toc-depth: 6
-    
+    number-sections: false
+    smooth-scroll: true
   docx:
     reference-doc: reference1.docx
+    toc: true
     toc-depth: 1
-    number-depth: 6
+    number-sections: false
 
+# No PDF format on purpose: convert the DOCX files to PDF in Word.
