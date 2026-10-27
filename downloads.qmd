@@ -1,11 +1,11 @@
 # Downloads {.unnumbered}
 
-Word (.docx) editions of this compilation, grouped by period. Each edition is a separate file.
+PDF editions of this compilation, grouped by period. Each edition is a separate file.
 
-- [1844–1846, Volume 1](downloads/Bab-Compilation-GPT_1844-1846_Vol-1.docx) — about 280,000 words
-- [1844–1846, Volume 2](downloads/Bab-Compilation-GPT_1844-1846_Vol-2.docx) — about 288,000 words
-- [1844–1846, Volume 3](downloads/Bab-Compilation-GPT_1844-1846_Vol-3.docx) — about 331,000 words
-- [1847](downloads/Bab-Compilation-GPT_1847.docx) — about 301,000 words
-- [1848–1850, Volume 1](downloads/Bab-Compilation-GPT_1848-1850_Vol-1.docx) — about 401,000 words
-- [1848–1850, Volume 2](downloads/Bab-Compilation-GPT_1848-1850_Vol-2.docx) — about 349,000 words
-- [1848–1850, Volume 3](downloads/Bab-Compilation-GPT_1848-1850_Vol-3.docx) — about 358,000 words
+- [1844–1846, Volume 1](downloads/Bab-Compilation-GPT_1844-1846_Vol-1.pdf) — about 280,000 words
+- [1844–1846, Volume 2](downloads/Bab-Compilation-GPT_1844-1846_Vol-2.pdf) — about 288,000 words
+- [1844–1846, Volume 3](downloads/Bab-Compilation-GPT_1844-1846_Vol-3.pdf) — about 331,000 words
+- [1847](downloads/Bab-Compilation-GPT_1847.pdf) — about 301,000 words
+- [1848–1850, Volume 1](downloads/Bab-Compilation-GPT_1848-1850_Vol-1.pdf) — about 401,000 words
+- [1848–1850, Volume 2](downloads/Bab-Compilation-GPT_1848-1850_Vol-2.pdf) — about 349,000 words
+- [1848–1850, Volume 3](downloads/Bab-Compilation-GPT_1848-1850_Vol-3.pdf) — about 358,000 words

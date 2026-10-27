@@ -7,6 +7,9 @@
     python tools/render_all.py --web-only --memory-gb 16    # if Quarto runs out of memory
     python tools/render_all.py --web-only --no-search       # builds the site without the search index
 
+Word files stay PRIVATE in _docx/. Only PDFs that you save from Word into the project's pdf/ folder
+are copied to _book/downloads/ (the public site). Any .docx found in _book/downloads is removed.
+
 Then commit and push; Netlify publishes the _book folder.
 """
 import argparse
@@ -63,16 +66,26 @@ def main():
         quarto("render", "--profile", "web,nosearch" if a.no_search else "web", "--to", "html")   # clears and rebuilds _book/
 
     if not a.web_only:
-        dest = ROOT / "_book" / "downloads"
-        dest.mkdir(parents=True, exist_ok=True)
         for prof in profiles:
             quarto("render", "--profile", prof, "--to", "docx")
             found = list((ROOT / "_docx" / prof[len("docx-"):]).glob("*.docx"))
             if not found:
                 sys.exit(f"No .docx was produced for profile {prof}")
             for f in found:
-                shutil.copy2(f, dest / f.name)
-                print(f"   copied {f.name} -> _book/downloads/")
+                print(f"   built {f.relative_to(ROOT)}   (kept private; open in Word and save as PDF into the pdf/ folder)")
+
+    # ---- public downloads: PDFs only
+    dest = ROOT / "_book" / "downloads"
+    pdf_dir = ROOT / "pdf"
+    pdf_dir.mkdir(exist_ok=True)
+    if (ROOT / "_book").exists():
+        dest.mkdir(parents=True, exist_ok=True)
+        for stray in dest.glob("*.docx"):
+            stray.unlink()
+            print(f"   removed {stray.name} from _book/downloads (Word files are not published)")
+        for f in sorted(pdf_dir.glob("*.pdf")):
+            shutil.copy2(f, dest / f.name)
+            print(f"   copied {f.name} -> _book/downloads/")
 
     print("\nDone. Commit and push the project (including _book/) to GitHub; Netlify will publish it.")
 

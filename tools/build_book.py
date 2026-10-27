@@ -717,8 +717,8 @@ format:
     (out / "_quarto-web.yml").write_text("\n".join(web) + "\n", encoding="utf-8")
 
     dl = ["# Downloads {.unnumbered}", "",
-          "Word (.docx) editions of this compilation, grouped by period. Each edition is a separate file.", ""]
-    dl += [f"- [{e[6]}](downloads/{e[5]}.docx) — about {round(e[3], -3):,} words" for e in editions]
+          "PDF editions of this compilation, grouped by period. Each edition is a separate file.", ""]
+    dl += [f"- [{e[6]}](downloads/{e[5]}.pdf) — about {round(e[3], -3):,} words" for e in editions]
     (out / "downloads.qmd").write_text("\n".join(dl) + "\n", encoding="utf-8")
 
     for old in out.glob("_quarto-docx-*.yml"):
